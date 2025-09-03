@@ -33,7 +33,7 @@ Buatlah penjelasan dan contoh eksekusi kode tentang perbedaan Null Safety dan La
 
 Jawab : Null Safety dan late variable adalah fitur Dart untuk membuat kode lebih aman dan efisien.
 
-- Null Safety mencegah kesalahan akibat nilai null. Secara bawaan, variabel di Dart tidak bisa null. Jika Anda ingin variabel bisa bernilai null, cukup tambahkan tanda tanya (?) setelah tipe datanya. Ini membantu mencegah error saat program berjalan karena mengakses sesuatu yang tidak ada.
+- Null Safety mencegah kesalahan akibat nilai null. Secara bawaan, variabel di Dart tidak bisa null. Jika ingin variabel bisa bernilai null, cukup tambahkan tanda tanya (?) setelah tipe datanya. Ini membantu mencegah error saat program berjalan karena mengakses sesuatu yang tidak ada.
 
 Contoh :
 String name = 'Budi'; // Tidak boleh null
@@ -42,7 +42,7 @@ String? city = 'Surabaya'; // Boleh null
 
 city = null; // Ini diperbolehkan
 
-late variable adalah variabel yang dijanjikan akan diinisialisasi nanti, tapi pasti akan ada nilainya sebelum digunakan. Ini berguna untuk inisialisasi yang butuh waktu (misalnya, mengambil data dari internet) dan tidak perlu langsung dilakukan saat program dimulai.
+late variable adalah variabel yang akan diinisialisasi nanti, tapi pasti akan ada nilainya sebelum digunakan. Ini berguna untuk inisialisasi yang butuh waktu (misalnya, mengambil data dari internet) dan tidak perlu langsung dilakukan saat program dimulai.
 
 Contoh :
 late String description;
