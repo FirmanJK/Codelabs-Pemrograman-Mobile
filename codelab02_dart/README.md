@@ -4,7 +4,7 @@
 
 Modifikasilah kode pada baris 3 di VS Code atau Editor Code favorit Anda berikut ini agar mendapatkan keluaran (output) sesuai yang diminta!
 
-![Kode Program Soal 1](img/code_soal 1.png)
+![Kode Program Soal 1](img/code_soal1.png)
 
 Output yang diminta (Gantilah Fulan dengan nama Anda):
 
