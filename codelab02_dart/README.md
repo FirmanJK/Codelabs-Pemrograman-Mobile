@@ -42,7 +42,7 @@ String? city = 'Surabaya'; // Boleh null
 
 city = null; // Ini diperbolehkan
 
-late variable adalah variabel yang akan diinisialisasi nanti, tapi pasti akan ada nilainya sebelum digunakan. Ini berguna untuk inisialisasi yang butuh waktu (misalnya, mengambil data dari internet) dan tidak perlu langsung dilakukan saat program dimulai.
+- late variable adalah variabel yang akan diinisialisasi nanti, tapi pasti akan ada nilainya sebelum digunakan. Ini berguna untuk inisialisasi yang butuh waktu (misalnya, mengambil data dari internet) dan tidak perlu langsung dilakukan saat program dimulai.
 
 Contoh :
 late String description;
