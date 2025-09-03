@@ -1,6 +1,6 @@
 # 7. Tugas Praktikum
 
-## Soal 1
+### Soal 1
 
 Modifikasilah kode pada baris 3 di VS Code atau Editor Code favorit Anda berikut ini agar mendapatkan keluaran (output) sesuai yang diminta!
 
@@ -37,7 +37,9 @@ Jawab : Null Safety dan late variable adalah fitur Dart untuk membuat kode lebih
 
 Contoh :
 String name = 'Budi'; // Tidak boleh null
+
 String? city = 'Surabaya'; // Boleh null
+
 city = null; // Ini diperbolehkan
 
 late variable adalah variabel yang dijanjikan akan diinisialisasi nanti, tapi pasti akan ada nilainya sebelum digunakan. Ini berguna untuk inisialisasi yang butuh waktu (misalnya, mengambil data dari internet) dan tidak perlu langsung dilakukan saat program dimulai.
@@ -46,6 +48,8 @@ Contoh :
 late String description;
 
 void initializeDescription() {
+
 description = 'Ini adalah deskripsi produk.';
+
 print(description);
 }
