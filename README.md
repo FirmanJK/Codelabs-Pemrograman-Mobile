@@ -50,8 +50,8 @@ Setiap modul codelab diatur dengan struktur yang konsisten:
 ### Kontak dan Informasi ℹ️
 
 * **Nama:** Mochammad Firmandika Jati Kusuma
-* **NIM:** 2341720229
-* **Jurusan:** D4 Teknik Informatika
+* **NIM :** 2341720229
+* **Prodi:** D4 Teknik Informatika
 * **Politeknik Negeri Malang**
 
 ---
