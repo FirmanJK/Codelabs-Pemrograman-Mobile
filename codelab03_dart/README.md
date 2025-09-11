@@ -224,6 +224,6 @@ Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda. (tuga
 
 ---
 
-## 3. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram! (tugaspratikum.dart)
+## 3. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram!
 
 > Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelab03_dart
