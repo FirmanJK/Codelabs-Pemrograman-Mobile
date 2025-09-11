@@ -6,6 +6,7 @@
 ![Hasil Praktikum 1](img/Praktikum1.JPG)
 
 _Pertanyaan mengenai Praktikum 1_
+```dart
 void main() {
 String test = "test2";
 if (test == "test1") {
@@ -18,6 +19,7 @@ print("Something else");
 
 if (test == "test2") print("Test2 again");
 }
+```markdown
 1. Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
    Jawab : Terjadi error karena pada penggunaan 'If' dan 'Else' harus diawali dengan huruf kecil menjadi 'if' dan 'else'.
    Selain itu, kondisi pada 'else if' juga perlu diperbaiki. Setelah memperbaiki kesalahan tersebut, kode akan berjalan dengan benar.
