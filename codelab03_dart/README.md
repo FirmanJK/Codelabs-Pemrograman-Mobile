@@ -15,8 +15,8 @@
 
 #### Pertanyaan & Jawaban
 
-> **1.Pertanyaan:**
-> Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
+> **1.**
+>  Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
 >
 > ```dart
 > void main() {
@@ -32,10 +32,10 @@
 > }
 > ```
 >
-> **Jawaban:**
-> Terjadi error karena penggunaan `If` dan `Else` harus diawali dengan huruf kecil menjadi `if` dan `else`. Selain itu, kondisi pada `else if` juga perlu diperbaiki. Setelah diperbaiki, kode akan berjalan dengan benar. Kode akan memeriksa nilai variabel `test` dan mencetak "Test2" karena nilai `test` adalah "test2" yang sesuai dengan kondisi pada `else if`.
+> **Jawaban :**
+>  Terjadi error karena penggunaan `If` dan `Else` harus diawali dengan huruf kecil menjadi `if` dan `else`. Selain itu, kondisi pada `else if` juga perlu diperbaiki. Setelah diperbaiki, kode akan berjalan dengan benar. Kode akan memeriksa nilai variabel `test` dan mencetak "Test2" karena nilai `test` adalah "test2" yang sesuai dengan kondisi pada `else if`.
 >
-> Berikut adalah kode yang telah diperbaiki:
+> Berikut adalah kode yang telah diperbaiki :
 >
 > ```dart
 > void main() {
@@ -54,8 +54,8 @@
 >
 > ---
 >
-> **2.Pertanyaan:**
-> Apa yang terjadi? Jika terjadi error, silakan perbaiki namun tetap menggunakan `if/else`.
+> **2.**
+>  Apa yang terjadi? Jika terjadi error, silakan perbaiki namun tetap menggunakan `if/else`.
 >
 > ```dart
 > String test = "true";
@@ -64,10 +64,10 @@
 > }
 > ```
 >
-> **Jawaban:**
-> Terjadi error karena kondisi pada `if` harus berupa nilai boolean (`true` atau `false`), sedangkan pada kode di atas kondisinya adalah sebuah `String`. Untuk memperbaikinya, `String` harus dibandingkan dengan nilai lain agar menghasilkan nilai boolean.
+> **Jawaban :**
+>  Terjadi error karena kondisi pada `if` harus berupa nilai boolean (`true` atau `false`), sedangkan pada kode di atas kondisinya adalah sebuah `String`. Untuk memperbaikinya, `String` harus dibandingkan dengan nilai lain agar menghasilkan nilai boolean.
 >
-> **Perbaikan:**
+> Berikut adalah kode yang telah diperbaiki :
 >
 > ```dart
 > String testValue = "true";
@@ -84,8 +84,8 @@
 
 #### Pertanyaan & Jawaban
 
-> **1.Pertanyaan:**
-> Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+> **1.**
+>  Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
 >
 > ```dart
 > void main() {
@@ -96,10 +96,10 @@
 > }
 > ```
 >
-> **Jawaban:**
-> Terjadi error karena variabel `counter` belum dideklarasikan (diberi tipe data dan nilai awal) sebelum digunakan.
+> **Jawaban :**
+>  Terjadi error karena variabel `counter` belum dideklarasikan (diberi tipe data dan nilai awal) sebelum digunakan.
 >
-> Berikut adalah kode yang telah diperbaiki:
+> Berikut adalah kode yang telah diperbaiki :
 >
 > ```dart
 > void main() {
@@ -113,7 +113,7 @@
 >
 > ---
 >
-> **2.Pertanyaan:**
+> **2.**
 > Apa yang terjadi? Jika terjadi error, silakan perbaiki namun tetap menggunakan `do-while`.
 >
 > ```dart
@@ -123,7 +123,7 @@
 > } while (counter < 77);
 > ```
 >
-> **Jawaban:**
+> **Jawaban :**
 > Kode berjalan dengan mencetak nilai `counter` dari 33 sampai 76. Hal ini terjadi karena kondisi pada `do-while` terpenuhi (`counter < 77`). Perulangan akan terus dieksekusi selama kondisi terpenuhi. Ketika `counter` mencapai 77, kondisi menjadi `false` dan perulangan berhenti.
 
 ---
@@ -134,7 +134,7 @@
 
 #### Pertanyaan & Jawaban
 
-> **1.Pertanyaan:**
+> **1.**
 > Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
 >
 > ```dart
@@ -145,10 +145,10 @@
 > }
 > ```
 >
-> **Jawaban:**
+> **Jawaban :**
 > Terjadi error karena variabel `Index` belum dideklarasikan dan penulisan `Index` tidak konsisten. Perlu diganti menjadi `index` pada semua bagiannya dan dideklarasikan dengan tipe data `int`. Selain itu, pada bagian increment perlu ditambahkan operator `++` untuk menambah nilai `index` setiap iterasi, dan `print('Index')` harus diganti menjadi `print(index)`. Setelah diperbaiki, kode akan mencetak angka dari 10 hingga 26.
 >
-> Berikut adalah kode yang telah diperbaiki:
+> Berikut adalah kode yang telah diperbaiki :
 >
 > ```dart
 > void main() {
@@ -160,7 +160,7 @@
 >
 > ---
 >
-> **2.Pertanyaan:**
+> **2.**
 > Apa yang terjadi? Jika terjadi error, silakan perbaiki namun tetap menggunakan `for` dan `break-continue`.
 >
 > ```dart
@@ -169,7 +169,7 @@
 > print(index);
 > ```
 >
-> **Jawaban:**
+> **Jawaban :**
 > Terjadi error karena penggunaan `If` dan `Else If` harus diawali dengan huruf kecil menjadi `if` dan `else if`. Setelah diperbaiki, kode akan berjalan dengan mencetak nilai dari 0 hingga 24. Perulangan akan berhenti ketika `index` mencapai 21 (karena `break`) dan akan melewati nilai `index` antara 2 hingga 6 (karena `continue`).
 >
 > Berikut adalah kode yang telah diperbaiki:
@@ -195,28 +195,29 @@ Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda. (tuga
 
 **Kode Program:**
 
-```dart
-void main() {
-  String nama = "Nama Lengkap Anda";
-  String nim = "NIM Anda";
+>```dart
+> void main() {
+>  String nama = "Nama Lengkap Anda";
+>  String nim = "NIM Anda";
+>
+>  print("Program Bilangan Prima dari 0 sampai 201");
+>  print("---");
 
-  print("Program Bilangan Prima dari 0 sampai 201");
-  print("---");
-
-  for (int i = 2; i <= 201; i++) {
-    bool isPrime = true;
-    for (int j = 2; j <= i / 2; j++) {
-      if (i % j == 0) {
-        isPrime = false;
-        break;
-      }
-    }
-    if (isPrime) {
-      print("$i - $nama - $nim");
-    }
-  }
-}
+>  for (int i = 2; i <= 201; i++) {
+>    bool isPrime = true;
+>    for (int j = 2; j <= i / 2; j++) {
+>      if (i % j == 0) {
+>        isPrime = false;
+>        break;
+>      }
+>    }
+>    if (isPrime) {
+>      print("$i - $nama - $nim");
+>    }
+>  }
+> }
 
 ---
 
 ## 3. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram! (tugaspratikum.dart)
+> Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelab03_dart
