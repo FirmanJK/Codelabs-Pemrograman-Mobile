@@ -189,7 +189,7 @@
 ---
 
 ## 2. Buatlah sebuah program yang dapat menampilkan bilangan prima dari angka 0 sampai 201 menggunakan Dart. 
-## Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda. (tugaspratikum.dart)
+Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda. (tugaspratikum.dart)
 
 ![Tugas Praktikum](img/TugasPraktikum.JPG)
 
@@ -217,5 +217,6 @@ void main() {
   }
 }
 
-## 3. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram!
-## Jawab :
+---
+
+## 3. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram! (tugaspratikum.dart)
