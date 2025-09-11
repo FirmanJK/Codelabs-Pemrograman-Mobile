@@ -41,18 +41,18 @@ Setiap folder di bawah ini berisi kode, tangkapan layar (`screenshots`), dan pen
 
 Setiap modul codelab diatur dengan struktur yang konsisten:
 
-- **`codelab_XX/`**: Folder utama untuk setiap tugas.
-  - **`img/`**: Berisi tangkapan layar dari hasil eksekusi kode.
-  - **`src/`**: Berisi file-file kode sumber Dart/Flutter.
-  - **`README.md`**: Jawaban dan penjelasan terperinci untuk tugas tersebut.
+- **`codelab_XX/`** : Folder utama untuk setiap tugas.
+  - **`img/`**      : Berisi tangkapan layar dari hasil eksekusi kode.
+  - **`src/`**      : Berisi file-file kode sumber Dart/Flutter.
+  - **`README.md`** : Jawaban dan penjelasan terperinci untuk tugas tersebut.
 
 ---
 
 ### Kontak dan Informasi ℹ️
 
-- **Nama:** Mochammad Firmandika Jati Kusuma
-- **NIM :** 2341720229
-- **Prodi:** D4 Teknik Informatika
+- **Nama    :** Mochammad Firmandika Jati Kusuma
+- **NIM     :** 2341720229
+- **Prodi   :** D4 Teknik Informatika
 - **Politeknik Negeri Malang**
 
 ---
