@@ -1,9 +1,12 @@
-# Laporan Praktikum 
-# 03 | Pengantar Bahasa Pemrograman Dart - Bagian 2 
+# Laporan Praktikum
+
+# 03 | Pengantar Bahasa Pemrograman Dart - Bagian 2
+
 # Pemrograman Mobile
 
-### Nama    : Mochammad Firmandika Jati Kusuma
-### NIM     : 2341720229
+### Nama : Mochammad Firmandika Jati Kusuma
+
+### NIM : 2341720229
 
 ---
 
@@ -16,7 +19,7 @@
 #### Pertanyaan & Jawaban
 
 > **1.**
->  Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
+> Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan!
 >
 > ```dart
 > void main() {
@@ -33,7 +36,7 @@
 > ```
 >
 > **Jawaban :**
->  Terjadi error karena penggunaan `If` dan `Else` harus diawali dengan huruf kecil menjadi `if` dan `else`. Selain itu, kondisi pada `else if` juga perlu diperbaiki. Setelah diperbaiki, kode akan berjalan dengan benar. Kode akan memeriksa nilai variabel `test` dan mencetak "Test2" karena nilai `test` adalah "test2" yang sesuai dengan kondisi pada `else if`.
+> Terjadi error karena penggunaan `If` dan `Else` harus diawali dengan huruf kecil menjadi `if` dan `else`. Selain itu, kondisi pada `else if` juga perlu diperbaiki. Setelah diperbaiki, kode akan berjalan dengan benar. Kode akan memeriksa nilai variabel `test` dan mencetak "Test2" karena nilai `test` adalah "test2" yang sesuai dengan kondisi pada `else if`.
 >
 > Berikut adalah kode yang telah diperbaiki :
 >
@@ -55,7 +58,7 @@
 > ---
 >
 > **2.**
->  Apa yang terjadi? Jika terjadi error, silakan perbaiki namun tetap menggunakan `if/else`.
+> Apa yang terjadi? Jika terjadi error, silakan perbaiki namun tetap menggunakan `if/else`.
 >
 > ```dart
 > String test = "true";
@@ -65,7 +68,7 @@
 > ```
 >
 > **Jawaban :**
->  Terjadi error karena kondisi pada `if` harus berupa nilai boolean (`true` atau `false`), sedangkan pada kode di atas kondisinya adalah sebuah `String`. Untuk memperbaikinya, `String` harus dibandingkan dengan nilai lain agar menghasilkan nilai boolean.
+> Terjadi error karena kondisi pada `if` harus berupa nilai boolean (`true` atau `false`), sedangkan pada kode di atas kondisinya adalah sebuah `String`. Untuk memperbaikinya, `String` harus dibandingkan dengan nilai lain agar menghasilkan nilai boolean.
 >
 > Berikut adalah kode yang telah diperbaiki :
 >
@@ -85,7 +88,7 @@
 #### Pertanyaan & Jawaban
 
 > **1.**
->  Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
+> Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
 >
 > ```dart
 > void main() {
@@ -97,7 +100,7 @@
 > ```
 >
 > **Jawaban :**
->  Terjadi error karena variabel `counter` belum dideklarasikan (diberi tipe data dan nilai awal) sebelum digunakan.
+> Terjadi error karena variabel `counter` belum dideklarasikan (diberi tipe data dan nilai awal) sebelum digunakan.
 >
 > Berikut adalah kode yang telah diperbaiki :
 >
@@ -188,14 +191,15 @@
 
 ---
 
-## 2. Buatlah sebuah program yang dapat menampilkan bilangan prima dari angka 0 sampai 201 menggunakan Dart. 
+## 2. Buatlah sebuah program yang dapat menampilkan bilangan prima dari angka 0 sampai 201 menggunakan Dart.
+
 Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda. (tugaspratikum.dart)
 
 ![Tugas Praktikum](img/TugasPraktikum.JPG)
 
-**Kode Program:**
+**Kode Program :**
 
->```dart
+> ```dart
 > void main() {
 >  String nama = "Nama Lengkap Anda";
 >  String nim = "NIM Anda";
@@ -203,21 +207,23 @@ Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda. (tuga
 >  print("Program Bilangan Prima dari 0 sampai 201");
 >  print("---");
 
->  for (int i = 2; i <= 201; i++) {
->    bool isPrime = true;
->    for (int j = 2; j <= i / 2; j++) {
->      if (i % j == 0) {
->        isPrime = false;
->        break;
->      }
->    }
->    if (isPrime) {
->      print("$i - $nama - $nim");
->    }
->  }
+> ``` dart
+> for (int i = 2; i <= 201; i++) {
+> bool isPrime = true;
+> for (int j = 2; j <= i / 2; j++) {
+> if (i % j == 0) {
+> isPrime = false;
+> break;
+> }
+> }
+> if (isPrime) {
+> print("$i - $nama - $nim");
+> }
+> }
 > }
 
 ---
 
 ## 3. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram! (tugaspratikum.dart)
+
 > Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelab03_dart
