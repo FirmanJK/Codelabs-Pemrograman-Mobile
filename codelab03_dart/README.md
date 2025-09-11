@@ -4,6 +4,7 @@
 ### Jawab :
 #### Praktikum 1
 ![Hasil Praktikum 1](img/Praktikum1.JPG)
+
 _Pertanyaan mengenai Praktikum 1_
 void main() {
 String test = "test2";
@@ -50,6 +51,7 @@ print("Kebenaran");
 
 #### Praktikum 2
 ![Hasil Praktikum 2](img/Praktikum2.JPG)
+
 _Pertanyaan mengenai Praktikum 2_
 void main() {
 while (counter < 33) {
@@ -81,6 +83,7 @@ counter++;
 
 #### Praktikum 3
 ![Hasil Praktikum 3](img/Praktikum3.JPG)
+
 _Pertanyaan mengenai Praktikum 3_
 void main() {
 for (Index = 10; index < 27; index) {  
@@ -126,6 +129,7 @@ print(index);
 ### Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda. (tugaspratikum.dart)
 ### Jawab :
 ![Tugas Praktikum](img/TugasPraktikum.JPG)
+
 Berikut adalah kode yang digunakan :
 void main() {
 String nama = "Nama Lengkap Anda";
