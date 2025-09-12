@@ -31,7 +31,7 @@ Jawab : Dalam membangun aplikasi Flutter, ada beberapa poin-poin penting yang ha
 
 Buatlah penjelasan dan contoh eksekusi kode tentang perbedaan Null Safety dan Late variabel !
 
-### ![Hasil Output](img\code_output_soal4.png)
+### ![Hasil Output](img/code_output_soal4.png)
 
 Jawab : Null Safety dan late variable adalah fitur Dart untuk membuat kode lebih aman dan efisien.
 
