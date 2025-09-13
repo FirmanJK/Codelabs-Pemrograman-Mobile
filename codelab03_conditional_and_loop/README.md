@@ -206,8 +206,9 @@ Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda. (tuga
 >
 >  print("Program Bilangan Prima dari 0 sampai 201");
 >  print("---");
+> ```
 
-> ``` dart
+> ```dart
 > for (int i = 2; i <= 201; i++) {
 > bool isPrime = true;
 > for (int j = 2; j <= i / 2; j++) {
@@ -221,9 +222,10 @@ Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda. (tuga
 > }
 > }
 > }
+> ```
 
 ---
 
 ## 3. Kumpulkan berupa link commit repo GitHub pada tautan yang telah disediakan di grup Telegram!
 
-> Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelab03_dart
+> Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelab03_conditional_and_loop
