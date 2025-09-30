@@ -505,7 +505,7 @@ The app works, and occasionally even provides interesting word pairs. But whenev
 #### Add the business logic
 Scroll to MyAppState and add the following code:
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum6/Langkah9.png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum6/Langkah1.png)
 
 Examine the changes:
 
@@ -522,7 +522,7 @@ When you save, you'll notice that Row acts similarly to Column—by default, it 
 
 Make the following change :
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum6/Langkah10.png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum6/Langkah2.png)
 
 The UI is back to where it was before.
 
