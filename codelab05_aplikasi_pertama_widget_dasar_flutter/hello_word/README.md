@@ -465,7 +465,7 @@ A solution is to replace pair.asLowerCase with "${pair.first} ${pair.second}". T
 
 However, you might want to keep the visual simplicity of pair.asLowerCase. Use Text's semanticsLabel property to override the visual content of the text widget with a semantic content that is more appropriate for screen readers:
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah6.png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah13.png)
 
 Now, screen readers correctly pronounce each generated word pair, yet the UI stays the same. Try this in action by using a screen reader on your device.
 
@@ -474,7 +474,7 @@ Now that the random word pair is presented with enough visual flair, it's time t
 
 First, remember that BigCard is part of a Column. By default, columns lump their children to the top, but we can override this. Go to MyHomePage's build() method, and make the following change:
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah7.png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah12.png)
 
 This centers the children inside the Column along its main (vertical) axis.
 
@@ -497,7 +497,7 @@ If you want, you can tweak this some more.
 
 With the optional changes, MyHomePage contains this code:
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah8.png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah11.png)
 
 ### 4. Add functionality
 The app works, and occasionally even provides interesting word pairs. But whenever the user clicks Next, each word pair disappears forever. It would be better to have a way of "remembering" the best suggestions: such as a ‘Like' button.
@@ -573,7 +573,7 @@ You need some way to hold the value of the navigation rail's selectedIndex. You 
 
 You could add selectedIndex as yet another property of MyAppState. And it would work. But you can imagine that the app state would quickly grow beyond reason if every widget stored its values in it.
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum7/Langkah2.png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum7/Langkah10.png)
 
 Some state is only relevant to a single widget, so it should stay with that widget.
 
@@ -599,7 +599,7 @@ The navigation rail now responds to user interaction. But the expanded area on t
 #### Use selectedIndex
 Place the following code at the top of _MyHomePageState's build method, just before return Scaffold:
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum7/Langkah4.png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum7/Langkah9.png)
 
 Examine this piece of code:
 
