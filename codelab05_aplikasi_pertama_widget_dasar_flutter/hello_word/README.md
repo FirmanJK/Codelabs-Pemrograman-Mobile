@@ -668,7 +668,7 @@ Here's what the widget does:
 - The list starts with a summary (for example, You have 5 favorites.).
 - The code then iterates through all the favorites, and constructs a ListTile widget for each one.
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum8/Langkah1(1).png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum8/Langkah1(1).PNG)
 
 5. README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda.
 
