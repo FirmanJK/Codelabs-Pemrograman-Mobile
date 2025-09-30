@@ -534,6 +534,7 @@ Here's one way to add the second button to MyHomePage. This time, use the Elevat
 ![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum6/Langkah11.jpeg)
 
 The app should look as follows :
+
 ![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum6/Langkah11(1).png)
 
 ## 5. Add navigation rail
@@ -543,7 +544,7 @@ To get to the meat of this step as soon as possible, split MyHomePage into 2 sep
 
 Select all of MyHomePage, delete it, and replace with the following code:
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum7/Langkah1.png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum7/Langkah1.jpeg)
 
 When saved, you'll see that the visual side of the UI is ready—but it doesn't work. Clicking ♥︎ (the heart) in the navigation rail does nothing.
 
@@ -614,7 +615,7 @@ Here's _MyHomePageState after that single remaining change:
 
 The app now switches between our GeneratorPage and the placeholder that will soon become the Favorites page.
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum7/Langkah5(1).png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum7/Langkah7.png)
 
 #### Responsiveness
 Next, make the navigation rail responsive. That is to say, make it automatically show the labels (using extended: true) when there's enough room for them.
@@ -663,7 +664,7 @@ What follows is just one way to implement the favorites page. How it's implement
 
 Here's the new FavoritesPage class:
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum8/Langkah1.png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum8/Langkah2.png)
 
 Here's what the widget does:
 
@@ -673,7 +674,7 @@ Here's what the widget does:
 - The list starts with a summary (for example, You have 5 favorites.).
 - The code then iterates through all the favorites, and constructs a ListTile widget for each one.
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum8/Langkah1(1).PNG)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum8/Langkah1(1).png)
 
 5. README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda.
 
