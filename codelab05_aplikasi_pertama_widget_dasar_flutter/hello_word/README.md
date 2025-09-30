@@ -478,7 +478,7 @@ First, remember that BigCard is part of a Column. By default, columns lump their
 
 This centers the children inside the Column along its main (vertical) axis.
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah7(1).png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah10.png)
 
 The children are already centered along the column's cross axis (in other words, they are already centered horizontally). But the Column itself isn't centered inside the Scaffold. We can verify this by using the Widget Inspector.
 
@@ -488,7 +488,7 @@ You can just center the column itself. Put your cursor onto Column, call up the 
 
 The app should now look something like the following:
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah8(1).png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah9.png)
 
 If you want, you can tweak this some more.
 
@@ -496,6 +496,7 @@ If you want, you can tweak this some more.
 - You can also add a SizedBox(height: 10) widget between BigCard and ElevatedButton. This way, there's a bit more separation between the two widgets. The SizedBox widget just takes space and doesn't render anything by itself. It's commonly used to create visual "gaps".
 
 With the optional changes, MyHomePage contains this code:
+
 ![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah8.png)
 
 ### 4. Add functionality
@@ -525,7 +526,7 @@ Make the following change :
 
 The UI is back to where it was before.
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum6/Langkah10(1).png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum6/Langkah13.png)
 
 Next, add the Like button and connect it to toggleFavorite(). For a challenge, first try to do this by yourself, without looking at the code block below.
 
@@ -535,7 +536,7 @@ Here's one way to add the second button to MyHomePage. This time, use the Elevat
 
 The app should look as follows :
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum6/Langkah11(1).png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum6/Langkah12.png)
 
 ## 5. Add navigation rail
 Most apps can't fit everything into a single screen. This particular app probably could, but for didactic purposes, you are going to create a separate screen for the user's favorites. To switch between the two screens, you are going to implement your first StatefulWidget.
@@ -548,7 +549,7 @@ Select all of MyHomePage, delete it, and replace with the following code:
 
 When saved, you'll see that the visual side of the UI is ready—but it doesn't work. Clicking ♥︎ (the heart) in the navigation rail does nothing.
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum7/Langkah1(1).png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum7/Langkah8.png)
 
 Examine the changes.
 
@@ -674,7 +675,7 @@ Here's what the widget does:
 - The list starts with a summary (for example, You have 5 favorites.).
 - The code then iterates through all the favorites, and constructs a ListTile widget for each one.
 
-![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum8/Langkah1(1).png)
+![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum8/Langkah1.png)
 
 5. README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda.
 
