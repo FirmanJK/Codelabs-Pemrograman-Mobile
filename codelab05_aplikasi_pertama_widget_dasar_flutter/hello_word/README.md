@@ -300,13 +300,17 @@ Next, open another configuration file in the project, analysis_options.yaml.
 ![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum3/Langkah4.png)
 
 Replace its contents with the following:
+
 ![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum3/Langkah5.png)
+
 This file determines how strict Flutter should be when analyzing your code. Since this is your first foray into Flutter, you're telling the analyzer to take it easy. You can always tune this later. In fact, as you get closer to publishing an actual production app, you will almost certainly want to make the analyzer stricter than this.
 
 Finally, open the main.dart file under the lib/ directory.
+
 ![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum3/Langkah6.png)
 
 Replace the contents of this file with the following:
+
 ![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum3/Langkah7.jpeg)
 
 
@@ -385,6 +389,7 @@ The line responsible for showing the current word pair looks like this now: Text
 Flutter provides a refactoring helper for extracting widgets but before you use it, make sure that the line being extracted only accesses what it needs. Right now, the line accesses appState, but really only needs to know what the current word pair is.
 
 For that reason, rewrite the MyHomePage widget as follows:
+
 ![Pertanyaan 4](assets/image/Pertanyaan4/Praktikum5/Langkah1.png)
 
 Nice. The Text widget no longer refers to the whole appState.
