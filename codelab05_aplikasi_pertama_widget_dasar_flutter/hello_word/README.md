@@ -191,7 +191,7 @@ Lakukan penyesuaian asset pada file pubspec.yaml dan tambahkan file logo Anda di
 
 Jangan lupa sesuaikan kode dan import di file main.dart kemudian akan tampil gambar seperti berikut.
 
-![Langkah 2](assets/image/Praktikum4/Langkah2(3).png)
+![Langkah 2](assets/image/Praktikum4/Langkah2(1).png)
 
 ## Praktikum 5 : Menerapkan Widget Material Design dan iOS Cupertino
 Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan project hello_world Anda. Lakukan langkah yang sama seperti pada Praktikum 3, yaitu setiap widget dibuat file sendiri lalu import ke main.dart dan screenshot hasilnya.
