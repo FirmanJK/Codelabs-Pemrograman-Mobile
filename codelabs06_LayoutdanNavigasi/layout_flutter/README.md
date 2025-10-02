@@ -18,7 +18,7 @@ Buatlah sebuah project flutter baru dengan nama layout_flutter. Atau sesuaikan s
 #### Langkah 2: Buka file lib/main.dart
 Buka file main.dart lalu ganti dengan kode berikut. Isi nama dan NIM Anda di text title.
 
-![Langkah 2](assets/images/Praktikum1/Langkah2.png)
+![Langkah 2](assets/images/Praktikum1/Langkah2.PNG)
 
 #### Langkah 3: Identifikasi layout diagram
 Langkah pertama adalah memecah tata letak menjadi elemen dasarnya:
@@ -41,15 +41,15 @@ Pertama, Anda akan membuat kolom bagian kiri pada judul. Tambahkan kode berikut 
 
 /* soal 1 */ Letakkan widget Column di dalam widget Expanded agar menyesuaikan ruang yang tersisa di dalam widget Row. Tambahkan properti crossAxisAlignment ke CrossAxisAlignment.start sehingga posisi kolom berada di awal baris.
 
-![Langkah 4](assets/images/Praktikum1/Langkah4.png)
+![Langkah 4](assets/images/Praktikum1/Langkah4.PNG)
 
 /* soal 2 */ Letakkan baris pertama teks di dalam Container sehingga memungkinkan Anda untuk menambahkan padding = 8. Teks ‘Batu, Malang, Indonesia' di dalam Column, set warna menjadi abu-abu.
 
-![Langkah 4](assets/images/Praktikum1/Langkah5.png)
+![Langkah 4](assets/images/Praktikum1/Langkah5.PNG)
 
 /* soal 3 */ Dua item terakhir di baris judul adalah ikon bintang, set dengan warna merah, dan teks "41". Seluruh baris ada di dalam Container dan beri padding di sepanjang setiap tepinya sebesar 32 piksel. Kemudian ganti isi body text ‘Hello World' dengan variabel titleSection seperti berikut:
 
-![Langkah 4](assets/images/Praktikum1/Langkah6.png)
+![Langkah 4](assets/images/Praktikum1/Langkah6.PNG)
 
 Hasilnya :
 
@@ -63,7 +63,7 @@ Karena kode untuk membangun setiap kolom hampir sama, buatlah metode pembantu pr
 
 lib/main.dart (_buildButtonColumn)
 
-![Langkah 1](assets/images/Praktikum2/Langkah1.png)
+![Langkah 1](assets/images/Praktikum2/Langkah1.PNG)
 
 #### Langkah 2: Buat widget buttonSection
 Buat Fungsi untuk menambahkan ikon langsung ke kolom. Teks berada di dalam Container dengan margin hanya di bagian atas, yang memisahkan teks dari ikon.
@@ -77,11 +77,11 @@ lib/main.dart (buttonSection)
 #### Langkah 3: Tambah button section ke body
 Tambahkan variabel buttonSection ke dalam body seperti berikut:
 
-![Langkah 3](assets/images/Praktikum2/Langkah2.png)
+![Langkah 3](assets/images/Praktikum2/Langkah2.PNG)
 
 Hasilnya :
 
-![Langkah 4](assets/images/Praktikum2/Langkah4.png)
+![Langkah 4](assets/images/Praktikum2/Langkah4.PNG)
 
 ### Praktikum 3: Implementasi text section
 Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktikum sebelumnya.
@@ -89,18 +89,18 @@ Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktik
 #### Langkah 1: Buat widget textSection
 Tentukan bagian teks sebagai variabel. Masukkan teks ke dalam Container dan tambahkan padding di sepanjang setiap tepinya. Tambahkan kode berikut tepat di bawah deklarasi buttonSection:
 
-![Langkah 1](assets/images/Praktikum3/Langkah1.png)
+![Langkah 1](assets/images/Praktikum3/Langkah1.PNG)
 
 Dengan memberi nilai softWrap = true, baris teks akan memenuhi lebar kolom sebelum membungkusnya pada batas kata.
 
 #### Langkah 2: Tambahkan variabel text section ke body
 Tambahkan widget variabel textSection ke dalam body seperti berikut:
 
-![Langkah 2](assets/images/Praktikum3/Langkah2.png)
+![Langkah 2](assets/images/Praktikum3/Langkah2.PNG)
 
 Hasilnya :
 
-![Langkah 2](assets/images/Praktikum3/Langkah3.png)
+![Langkah 2](assets/images/Praktikum3/Langkah3.PNG)
 
 ### Praktikum 4: Implementasi image section
 Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktikum sebelumnya.
@@ -146,6 +146,5 @@ Hasilnya :
 
 ![Langkah 2](assets/images/Pertanyaan2/Tampilan.gif)
 
-
 3. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
-   Jawab :
+   Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelabs06_LayoutdanNavigasi 
