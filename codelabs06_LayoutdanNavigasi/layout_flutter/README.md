@@ -28,7 +28,7 @@ Langkah pertama adalah memecah tata letak menjadi elemen dasarnya:
 - Apakah ada elemen yang tumpang tindih?
 - Apakah UI memerlukan tab?
 - Perhatikan area yang memerlukan alignment, padding, atau borders.
-- 
+
 ![Langkah 3](assets/images/Praktikum1/Langkah3.jpeg) 
 
 1. Pertama, identifikasi elemen yang lebih besar. Dalam contoh ini, empat elemen disusun menjadi sebuah kolom: sebuah gambar, dua baris, dan satu blok teks.
@@ -108,21 +108,21 @@ Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktik
 #### Langkah 1: Siapkan aset gambar
 Anda dapat mencari gambar di internet yang ingin ditampilkan. Buatlah folder images di root project layout_flutter. Masukkan file gambar tersebut ke folder images, lalu set nama file tersebut ke file pubspec.yaml seperti berikut:
 
-![Langkah 2](assets/images/Praktikum4/Langkah1.png)
+![Langkah 2](assets/images/Praktikum4/Langkah1.PNG)
 
 Contoh nama file gambar di atas adalah Praktikum4/arjuno.jpg
 
 #### Langkah 2: Tambahkan gambar ke body
 Tambahkan aset gambar ke dalam body seperti berikut:
 
-![Langkah 2](assets/images/Praktikum4/Langkah2.png)
+![Langkah 2](assets/images/Praktikum4/Langkah2.PNG)
 
 BoxFit.cover memberi tahu kerangka kerja bahwa gambar harus sekecil mungkin tetapi menutupi seluruh kotak rendernya.
 
 #### Langkah 3: Terakhir, ubah menjadi ListView
 Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karena ListView mendukung scroll yang dinamis saat aplikasi dijalankan pada perangkat yang resolusinya lebih kecil.6
 
-![Langkah 2](assets/images/Praktikum4/Langkah3.png)
+![Langkah 2](assets/images/Praktikum4/Langkah3.PNG)
 
 Hasilnya :
 
@@ -140,7 +140,7 @@ Hasilnya :
 
 pubsec.yaml
 
-![Langkah 2](assets/images/Pertanyaan2/Langkah3.png)
+![Langkah 2](assets/images/Pertanyaan2/Langkah3.PNG)
 
 Hasilnya :
 
