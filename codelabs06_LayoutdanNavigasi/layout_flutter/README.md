@@ -81,7 +81,7 @@ Tambahkan variabel buttonSection ke dalam body seperti berikut:
 
 Hasilnya :
 
-![Langkah 4](assets/images/Praktikum2/Langkah4.PNG)
+![Langkah 3](assets/images/Praktikum2/Langkah4.PNG)
 
 ### Praktikum 3: Implementasi text section
 Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktikum sebelumnya.
@@ -108,7 +108,7 @@ Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktik
 #### Langkah 1: Siapkan aset gambar
 Anda dapat mencari gambar di internet yang ingin ditampilkan. Buatlah folder images di root project layout_flutter. Masukkan file gambar tersebut ke folder images, lalu set nama file tersebut ke file pubspec.yaml seperti berikut:
 
-![Langkah 2](assets/images/Praktikum4/Langkah1.PNG)
+![Langkah 1](assets/images/Praktikum4/Langkah1.PNG)
 
 Contoh nama file gambar di atas adalah Praktikum4/arjuno.jpg
 
@@ -122,11 +122,11 @@ BoxFit.cover memberi tahu kerangka kerja bahwa gambar harus sekecil mungkin teta
 #### Langkah 3: Terakhir, ubah menjadi ListView
 Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karena ListView mendukung scroll yang dinamis saat aplikasi dijalankan pada perangkat yang resolusinya lebih kecil.6
 
-![Langkah 2](assets/images/Praktikum4/Langkah3.PNG)
+![Langkah 3](assets/images/Praktikum4/Langkah3.PNG)
 
 Hasilnya :
 
-![Langkah 2](assets/images/Praktikum4/Langkah4.png)
+![Langkah 3](assets/images/Praktikum4/Langkah4.PNG)
 
 2. Silakan implementasikan di project baru "basic_layout_flutter" dengan mengakses sumber ini: https://docs.flutter.dev/codelabs/layout-basics
 
