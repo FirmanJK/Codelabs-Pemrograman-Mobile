@@ -129,48 +129,23 @@ Hasilnya :
 ![Langkah 2](assets/images/Praktikum4/Langkah4.png)
 
 2. Silakan implementasikan di project baru "basic_layout_flutter" dengan mengakses sumber ini: https://docs.flutter.dev/codelabs/layout-basics
+
    Jawab :
 
+ lib/main.dart 
+
+![Langkah 2](assets/images/Pertanyaan2/Langkah1.jpeg)
+
+![Langkah 2](assets/images/Pertanyaan2/Langkah2.jpeg)
+
+pubsec.yaml
+
+![Langkah 2](assets/images/Pertanyaan2/Langkah3.png)
+
+Hasilnya :
+
+![Langkah 2](assets/images/Pertanyaan2/Tampilan.gif)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
 3. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
+   Jawab :
