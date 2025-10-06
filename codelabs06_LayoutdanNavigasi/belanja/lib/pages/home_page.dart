@@ -1,0 +1,54 @@
+import 'package:flutter/material.dart';
+import 'package:belanja/models/item.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // throw UnimplementedError();
+    final List<Item> items = [
+    Item(name: 'Sugar', price: 5000),
+    Item(name: 'Banana', price: 2000)
+  ];
+  
+  return Scaffold(
+      appBar: AppBar(
+        title: const Text('Shopping List'),
+      ),
+      body: Container(
+        margin: const EdgeInsets.all(8),
+        child: ListView.builder(
+          itemCount: items.length,
+          itemBuilder: (context, index) {
+            final item = items[index];
+             return InkWell(
+              onTap: () {
+                // Aksi ketika item diklik
+                Navigator.pushNamed(context, '/item', arguments: item);
+              },
+            child: Card(
+              child: Container(
+                margin: const EdgeInsets.all(8),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Text(item.name),
+                    ),
+                    Expanded(
+                      child: Text(
+                        item.price.toString(),
+                        textAlign: TextAlign.end,
+                      ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
