@@ -71,7 +71,69 @@ Sebaliknya, Widget kedua memakai widget Text biasa. Widget ini tidak memiliki ke
 Intinya, perbedaannya adalah cara keduanya menangani teks yang tidak muat. Satu widget cerdas dan menyesuaikan diri, sementara yang lain hanya memotong teks.
 
 5. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto_size_text berdasarkan tautan pada dokumentasi ini !
-    Jawab : | Parameter             | Penjelasan Singkat                                   |
+    Jawab : 
+### Parameter Utama & Gaya
+- text (parameter pertama)
+Berisi teks utama yang ingin ditampilkan. Contoh:
+AutoSizeText('Ini teks saya').
+
+- style
+Menggunakan TextStyle untuk mengatur tampilan teks seperti warna, ketebalan, dan jenis font.
+Nilai fontSize di sini menjadi ukuran awal sebelum plugin menyesuaikannya agar muat di layar.
+
+- maxLines
+Menentukan jumlah maksimum baris yang dapat digunakan oleh teks.
+Jika tidak diatur, teks otomatis menyesuaikan tinggi dan lebar area yang tersedia.
+
+#
+
+### Parameter Pengatur Ukuran
+- minFontSize
+Menentukan ukuran font terkecil yang masih diizinkan.
+Jika teks tetap tidak muat setelah mencapai batas ini, maka aturan overflow akan diterapkan.
+(Default: 12)
+
+- maxFontSize
+Menentukan ukuran font terbesar yang boleh digunakan.
+Cocok untuk membatasi teks agar tidak terlalu besar pada area yang luas.
+
+- stepGranularity
+Mengatur seberapa besar pengurangan ukuran font setiap kali plugin menyesuaikan ukuran.
+Nilai default adalah 1, dan disarankan tidak lebih kecil agar performa tetap optimal.
+
+- presetFontSizes
+Menyediakan daftar ukuran font tertentu yang boleh digunakan.
+Jika parameter ini diatur, maka minFontSize, maxFontSize, dan stepGranularity akan diabaikan.
+Daftar ukuran harus diurutkan dari besar ke kecil, misalnya [40, 20, 14].
+
+#
+### Parameter Penanganan Overflow
+
+- overflow
+Menentukan cara menampilkan teks yang masih tidak muat setelah penyesuaian ukuran.
+Contohnya: TextOverflow.ellipsis untuk menambahkan tanda "..." di akhir teks.
+
+- overflowReplacement
+Menentukan widget pengganti jika teks tetap tidak muat.
+Cocok untuk menampilkan ikon, pesan, atau elemen lain agar teks tidak menjadi terlalu kecil dan sulit dibaca.
+
+#
+### Parameter Lanjutan & Tambahan
+- group
+Digunakan untuk menyamakan ukuran teks di beberapa AutoSizeText.
+Semua widget dalam satu grup akan memiliki ukuran font yang sama, mengikuti teks dengan ukuran terkecil.
+
+- wrapWords
+Menentukan apakah kata panjang boleh dipisah ke baris berikutnya.
+Secara default bernilai true, agar berperilaku seperti Text biasa.
+
+- Parameter lainnya
+Parameter seperti key, textAlign, textDirection, locale, softWrap, textScaleFactor, dan semanticsLabel
+berfungsi sama seperti di widget Text bawaan Flutter.
+
+#
+
+| Parameter             | Penjelasan Singkat                                   |
 | --------------------- | ---------------------------------------------------- |
 | `key`                 | Identitas unik widget.                               |
 | `textKey`             | Kunci untuk teks internal.                           |
@@ -91,6 +153,9 @@ Intinya, perbedaannya adalah cara keduanya menangani teks yang tidak muat. Satu 
 | `textScaleFactor`     | Skala teks sesuai preferensi pengguna.               |
 | `maxLines`            | Jumlah baris maksimal teks.                          |
 | `semanticsLabel`      | Label untuk pembaca layar (aksesibilitas).           |
+                    |
+
+#
 
         import 'package:flutter/material.dart';
         import 'package:auto_size_text/auto_size_text.dart';
