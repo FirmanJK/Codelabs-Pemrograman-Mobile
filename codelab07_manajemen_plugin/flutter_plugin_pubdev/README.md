@@ -194,6 +194,4 @@ berfungsi sama seperti di widget Text bawaan Flutter.
 
 6. Kumpulkan laporan praktikum Anda berupa link repository GitHub kepada dosen!
    
-   Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelabs07_manajemen_plugin/flutter_plugin_pubdev
-
-
+   Jawab :https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelab07_manajemen_plugin/flutter_plugin_pubdev
