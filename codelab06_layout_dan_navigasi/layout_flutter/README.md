@@ -147,7 +147,8 @@ Hasilnya :
 ![Langkah 2](assets/images/Pertanyaan2/Tampilan.gif)
 
 3. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
-   Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelabs06_LayoutdanNavigasi 
+   
+   Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelab06_layout_dan_navigasi
 
 
 

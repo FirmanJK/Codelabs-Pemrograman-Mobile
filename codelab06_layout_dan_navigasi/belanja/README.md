@@ -141,4 +141,4 @@ Terakhir  ubah ItemPage agar menerima data melalui konstruktornya, bukan lagi da
 
 #### Hasil :
 
-![Langkah 6](assets/images/TugasPraktikum2/shopping.gif)
+![Langkah 6](assets/images/TugasPraktikum2/Shopping.gif)
