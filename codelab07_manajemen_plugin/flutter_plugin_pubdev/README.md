@@ -57,13 +57,16 @@ Hasil :
 
 
 2. Jelaskan maksud dari langkah 2 pada praktikum tersebut!
+    
     Jawab : Maksud dari langkah 2 ini untuk menambahkan plugin eksternal ke dalam proyek Flutter. Perintah flutter pub add auto_size_text digunakan untuk mengunduh dan menginstal paket dari pub.dev, sehingga proyek bisa menggunakan widget AutoSizeText yang dapat menyesuaikan ukuran teks secara otomatis. Setelah perintah ini berhasil, nama plugin dan versinya akan tercatat di file pubspec.yaml.
 
 3. Jelaskan maksud dari langkah 5 pada praktikum tersebut!
+   
    Jawab : Maksud dari langkah 5 ini agar RedTextWidget bisa menerima data dari luar. Awalnya, widget ini kosong. Dengan menambahkan final String text; dan required this.text pada konstruktornya, kita membuat properti text yang wajib diisi saat widget dipanggil. Ini mengubahnya menjadi widget yang dapat digunakan kembali (reusable) untuk menampilkan berbagai teks yang berbeda.
 
 
 4. Pada langkah 6 terdapat dua widget yang ditambahkan, jelaskan fungsi dan perbedaannya!
+   
    Jawab : Pada langkah 6 terdapat dua widget yang ditambahkan memiliki fungsi berbeda. Widget pertama memakai RedTextWidget yang menggunakan plugin AutoSizeText. Ini membuat teks di dalamnya dapat mengecil secara otomatis agar muat di dalam kotak kuning.
 
 Sebaliknya, Widget kedua memakai widget Text biasa. Widget ini tidak memiliki kemampuan tersebut, sehingga teks di dalam kotak hijau akan terpotong jika terlalu panjang.
@@ -71,6 +74,7 @@ Sebaliknya, Widget kedua memakai widget Text biasa. Widget ini tidak memiliki ke
 Intinya, perbedaannya adalah cara keduanya menangani teks yang tidak muat. Satu widget cerdas dan menyesuaikan diri, sementara yang lain hanya memotong teks.
 
 5. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto_size_text berdasarkan tautan pada dokumentasi ini !
+    
     Jawab : 
 ### Parameter Utama & Gaya
 - text (parameter pertama)
@@ -153,7 +157,7 @@ berfungsi sama seperti di widget Text bawaan Flutter.
 | `textScaleFactor`     | Skala teks sesuai preferensi pengguna.               |
 | `maxLines`            | Jumlah baris maksimal teks.                          |
 | `semanticsLabel`      | Label untuk pembaca layar (aksesibilitas).           |
-                    |
+                    
 
 #
 
@@ -189,6 +193,7 @@ berfungsi sama seperti di widget Text bawaan Flutter.
 
 
 6. Kumpulkan laporan praktikum Anda berupa link repository GitHub kepada dosen!
-   Jawab :
+   
+   Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelabs07_manajemen_plugin/flutter_plugin_pubdev
 
 
