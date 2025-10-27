@@ -130,14 +130,49 @@ Jika diperlukan, beberapa widget yang telah Anda buat sebelumnya, memerlukan kod
 
     Jawab :
 
+#### Langkah 1: Buat project baru
+Buatlah project flutter baru di pertemuan 09 dengan nama camera_filter_app
+
+#### Langkah 2 : Buat Widget Camera Screen atau Take Picture, Display Picture Screen
+
+![Langkah 2](assets/images/Pertanyaan/Langkah2.jpg)
+
+#### Langkah 3: Buat widget Selector ring dan dark gradient
+Buatlah folder widget dan file baru yang berisi kode berikut.
+
+![Langkah 3](assets/images/Pertanyaan/Langkah3.jpg)
+
+#### Langkah 4: Buat widget photo filter carousel atau photo filter screen
+Buat file baru di folder widget dengan kode seperti berikut.
+
+![Langkah 4](assets/images/Pertanyaan/Langkah4.jpg)
+
+#### Langkah 5: Membuat filter warna - bagian 1
+Buat file baru di folder widget seperti kode berikut.
+
+![Langkah 5](assets/images/Pertanyaan/Langkah5.jpg)
+
+#### Langkah 6: Membuat filter warna
+Buat file baru di folder widget seperti kode berikut ini.
+
+![Langkah 6](assets/images/Pertanyaan/Langkah6.png)
+
+#### Langkah 7: Menampilkan hasil foto dan Implementasi filter carousel
+
+![Langkah 7](assets/images/Pertanyaan/Langkah7.jpg)
+
+#### Output
+
+![Langkah 8](assets/images/Pertanyaan/Output.gif)
+
 3. Jelaskan maksud void async pada praktikum 1?
 
-    Jawab :
+    Jawab : Pada praktikum 1, fungsi main() diubah menjadi Future<void> main() async karena di dalamnya terdapat pemanggilan fungsi yang bersifat asinkron (membutuhkan waktu tunggu) seperti availableCameras() yang menggunakan kata kunci await. Kata kunci async menandakan bahwa fungsi tersebut akan berjalan secara asinkron (tidak harus selesai seketika) dan dapat "menjeda" eksekusi dengan await. Sementara itu, void atau Future<void> menunjukkan bahwa fungsi tersebut tidak mengembalikan nilai spesifik setelah selesai. Dalam konteks Flutter, ini memastikan bahwa proses inisialisasi plugin seperti kamera telah selesai sebelum aplikasi (runApp()) diluncurkan, mencegah aplikasi crash karena mencoba mengakses resource yang belum siap.
 
 4. Jelaskan fungsi dari anotasi @immutable dan @override ?
 
-    Jawab :
+    Jawab : Anotasi @immutable adalah petunjuk bagi compiler Dart (dan tool pengembangan) bahwa kelas tersebut, dan semua fieldnya, seharusnya tidak diubah (imutable) setelah objek dibuat (diinisialisasi). Anotasi ini sering digunakan pada widget StatelessWidget dan StatefulWidget di Flutter untuk memastikan bahwa data yang dilewatkan ke widget tersebut bersifat final, yang membantu dalam optimalisasi kinerja dan mencegah bug terkait perubahan status yang tidak terduga. Anotasi @override, di sisi lain, berfungsi untuk menyatakan bahwa sebuah metode dalam subclass (kelas anak) sengaja menggantikan atau menimpa metode dengan nama yang sama yang ada di superclass (kelas induk). Anotasi ini wajib digunakan ketika menimpa metode dasar dari kelas Flutter seperti build(), initState(), atau dispose(), dan berfungsi sebagai pengaman compiler untuk memverifikasi bahwa penimpaan tersebut sudah benar dan sesuai dengan tanda tangan metode aslinya.
 
 5. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
     
-    Jawab : 
+    Jawab : https://github.com/FirmanJK/Codelabs-Pemrograman-Mobile/tree/main/codelab09_kamera 
