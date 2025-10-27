@@ -1,7 +1,38 @@
 import 'package:flutter/material.dart';
+import 'package:camera/camera.dart';
+import 'widget/takepicture_screen.dart'; 
 
-void main() {
-  runApp(const MyApp());
+// void main() {
+//  runApp(const MyApp());
+//}
+
+// Deklarasikan variabel global untuk daftar kamera jika akan digunakan di tempat lain
+late List<CameraDescription> cameras;
+
+// Ubah fungsi main() menjadi async
+Future<void> main() async {
+  // Pastikan bahwa layanan plugin diinisialisasi
+  // sehingga 'availableCameras()' dapat dipanggil sebelum 'runApp()'
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Dapatkan daftar kamera yang tersedia di perangkat.
+  cameras = await availableCameras();
+
+  // Dapatkan kamera tertentu dari daftar kamera yang tersedia.
+  final firstCamera = cameras.first;
+
+  // runApp(const MyApp());
+  runApp(
+    MaterialApp(
+      // Menggunakan tema gelap (dark theme) untuk kontras yang lebih baik pada pratinjau kamera
+      theme: ThemeData.dark(),
+      home: TakePictureScreen(
+        // Kirim kamera yang tersedia ke widget TakePictureScreen.
+        camera: firstCamera,
+      ),
+      debugShowCheckedModeBanner: false,
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
