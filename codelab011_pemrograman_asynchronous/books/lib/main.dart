@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
+import 'package:async/async.dart';
+import 'geolocation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
       ),
-      home: const FuturePage(),
+      home: const LocationScreen(),
     );
   }
 }
@@ -36,6 +38,7 @@ class FuturePage extends StatefulWidget {
 
 class _FuturePageState extends State<FuturePage> {
   String result = '';
+  late Completer completer;
 
   Future<Response> getData() async {
     const authority = 'www.googleapis.com';
@@ -69,11 +72,65 @@ class _FuturePageState extends State<FuturePage> {
     });
   }
 
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    try {
+      await Future.delayed(const Duration(seconds: 5));
+      if (!completer.isCompleted) {
+        completer.complete(42);
+      }
+// throw Exception();
+    } catch (_) {
+      if (!completer.isCompleted) {
+        completer.completeError({});
+      }
+    }
+  }
+
+  void returnFG() {
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
+    futures.then((List<int> value) {
+      int total = 0;
+      for (var element in value) {
+        total += element;
+      }
+      setState(() {
+        result = total.toString();
+      });
+    });
+  }
+
+  Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('Something terrible happened!');
+  }
+
+  Future handleError() async {
+    try {
+      await returnError();
+    } catch (error) {
+      setState(() {
+        result = error.toString().replaceAll('Exception: ', '');
+      });
+    } finally {
+      print('Complete');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Back from the Future'),
+        title: const Text('Back from the Future Firman'),
       ),
       body: Center(
         child: Column(
@@ -82,11 +139,14 @@ class _FuturePageState extends State<FuturePage> {
             ElevatedButton(
               child: const Text('GO!'),
               onPressed: () {
-                count();
+                handleError();
               },
             ),
             const Spacer(),
-            Text(result),
+            Text(
+              result,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
             const Spacer(),
             const CircularProgressIndicator(),
             const Spacer(),
