@@ -140,29 +140,21 @@ Jawab :
 ## Soal 13
 - Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
 
-Jawab :
-
-
+Jawab : Tidak ada perbedaan UI yang signifikan dengan praktikum sebelumnya. Kedua implementasi menampilkan loading indicator (CircularProgressIndicator) saat menunggu data lokasi, kemudian menampilkan teks koordinat setelah data diperoleh. Perbedaan utama terletak pada pendekatan implementasinya, bukan pada tampilan visual. Praktikum sebelumnya menggunakan pendekatan manual dengan .then() dan setState() untuk mengupdate UI, sedangkan praktikum ini menggunakan FutureBuilder yang merupakan widget khusus Flutter untuk menangani Future secara otomatis. FutureBuilder lebih efisien karena secara otomatis mengelola state berdasarkan status koneksi (waiting, done, error) tanpa perlu memanggil setState() secara manual. Meskipun hasilnya sama, FutureBuilder memberikan kode yang lebih bersih, mudah dibaca, dan mengikuti best practice Flutter dalam menangani operasi asynchronous di dalam widget.
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan 
 commit dengan pesan "W11: Soal 13".
 
 Jawab :
 
-![Langkah 4](assets/images/Praktikum7/Langkah8.gif)
+![Langkah 4](assets/images/Praktikum7/Langkah4.gif)
 
 - Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
-
-Jawab :
-
-
 
 ## Soal 14
 - Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
 
-Jawab :
-
-
+Jawab : Tidak ada perbedaan UI dengan langkah sebelumnya jika aplikasi berjalan normal tanpa error. UI tetap menampilkan loading indicator (CircularProgressIndicator) saat menunggu, kemudian menampilkan koordinat lokasi setelah data diperoleh. Perbedaan hanya terlihat ketika terjadi error atau masalah dalam mengambil data lokasi. Pada langkah sebelumnya, jika terjadi error, aplikasi mungkin crash atau menampilkan pesan error default dari Flutter. Sedangkan pada langkah ini, dengan penambahan if (snapshot.hasError), aplikasi akan menampilkan pesan error yang user-friendly yaitu "Something terrible happened!" tanpa crash. Jadi, handling error ini berfungsi sebagai safety net untuk memberikan pengalaman pengguna yang lebih baik ketika terjadi masalah seperti permission ditolak, GPS tidak aktif, atau koneksi gagal. Dalam kondisi normal, UI tetap sama karena error handling hanya aktif saat ada masalah.
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 14".
 
@@ -177,44 +169,50 @@ Jawab :
 
 Jawab :
 
-
+![Langkah 2](assets/images/Praktikum8/Langkah2.png)
 
 - Silakan ganti dengan warna tema favorit Anda.
 
 Jawab :
 
-
+![Langkah 2](assets/images/Praktikum8/Langkah2.gif)
 
 ## Soal 16
 - Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
 
-Jawab :
+Jawab : Ketika setiap button diklik, background color pada halaman pertama (Navigation First Screen) akan berubah sesuai dengan warna button yang dipilih. Hal ini terjadi karena aplikasi menggunakan konsep navigation dengan return value. Saat button "Change Color" diklik di halaman pertama, aplikasi akan menavigasi ke halaman kedua menggunakan Navigator.push() yang mengembalikan sebuah Future. Ketika salah satu button warna (Red, Green, atau Blue) diklik di halaman kedua, method Navigator.pop(context, color) akan menutup halaman kedua dan mengembalikan nilai warna yang dipilih ke halaman pertama. Method _navigateAndGetColor() yang bersifat async akan menunggu (await) hasil dari navigasi tersebut, kemudian menyimpan warna yang dikembalikan ke variabel color dan memanggil setState() untuk memperbarui UI. Jika user menekan tombol back tanpa memilih warna, aplikasi akan menggunakan warna default Colors.blue karena operator null-coalescing (??). Dengan demikian, background halaman pertama akan berubah secara dinamis sesuai pilihan user, mendemonstrasikan komunikasi data antar halaman menggunakan async/await dan navigation return value.
 
-
+![Langkah 7](assets/images/Praktikum8/Langkah7.gif)
 
 - Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
 
 Jawab :
 
-
+![Langkah 8](assets/images/Praktikum8/Langkah8.gif)
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 16"
 
 Jawab :
 
+![Langkah 7](assets/images/Praktikum8/Langkah7.gif)
+
 ![Langkah 8](assets/images/Praktikum8/Langkah8.gif)
+
+## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
 
 ## Soal 17
 - Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
 
-Jawab :
+Jawab : Ketika button "Change Color" diklik, akan muncul dialog popup dengan judul "Very important question" dan pesan "Please choose a color" beserta tiga pilihan button warna (Red, Green, Blue). Saat salah satu button warna diklik, dialog akan tertutup dan background layar akan berubah sesuai warna yang dipilih. Hal ini terjadi karena aplikasi menggunakan showDialog() dengan barrierDismissible: false, yang berarti dialog hanya bisa ditutup dengan menekan salah satu button pilihan, bukan dengan tap di luar dialog. Method _showColorDialog() bersifat async dan menunggu hasil dari dialog menggunakan await. Ketika user memilih warna, Navigator.pop(context, color) menutup dialog dan mengembalikan nilai warna yang dipilih. Setelah dialog tertutup, setState() dipanggil untuk memperbarui UI sehingga background berubah warna. Berbeda dengan praktikum sebelumnya yang menggunakan navigasi ke halaman baru, praktikum ini menggunakan dialog yang lebih efisien karena tidak perlu membuat halaman terpisah dan memberikan pengalaman user yang lebih cepat dengan popup yang muncul di atas layar yang sama.
 
+![Langkah 6](assets/images/Praktikum9/Langkah6.gif)
 
 
 - Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
 
 Jawab :
 
+![Langkah 6](assets/images/Praktikum9/Langkah5.gif)
 
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 17".
@@ -223,3 +221,4 @@ Jawab :
 
 ![Langkah 6](assets/images/Praktikum9/Langkah6.gif)
 
+![Langkah 6](assets/images/Praktikum9/Langkah5.gif)
