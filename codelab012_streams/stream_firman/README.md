@@ -34,13 +34,13 @@ Tambahkan 5 warna lainnya sesuai keinginan Anda pada variabel colors tersebut.
 
 Jawab :
 
-![Langkah 3](assets/images/Praktikum1/Langkah3.gif)
+![Langkah 3](assets/images/Praktikum1/Langkah3.png)
 
 Lakukan commit hasil jawaban Soal 2 dengan pesan "W12: Jawaban Soal 2"
 
 Jawab :
 
-![Langkah 4](assets/images/Praktikum1/Langkah4.png)
+![Langkah 4](assets/images/Praktikum1/Hasil4.png)
 
 ## Soal 3
 Jelaskan fungsi keyword yield* pada kode tersebut!
