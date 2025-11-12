@@ -45,13 +45,12 @@ Jawab :
 ## Soal 3
 Jelaskan fungsi keyword yield* pada kode tersebut!
 
-Jawab :
+Jawab : Keyword yield* pada kode tersebut berfungsi untuk mendelegasikan atau meneruskan semua nilai dari stream lain ke dalam stream yang sedang dibuat. Dalam konteks ini, yield* akan menghasilkan nilai-nilai secara periodik dari Stream.periodic() ke stream utama, sehingga semua output dari stream periodic tersebut akan disalurkan atau di-forward secara otomatis.
 
 
 Apa maksud isi perintah kode tersebut?
 
-Jawab :
-
+Jawab : Maksud dari perintah kode tersebut adalah membuat sebuah generator function yang menghasilkan stream warna secara periodik. Setiap 1 detik, fungsi akan dipanggil dengan parameter t yang merupakan counter atau penghitung yang bertambah setiap kali fungsi dipanggil dimulai dari 0, 1, 2, 3, dan seterusnya. Kemudian int index = t % colors.length; menghitung index dengan operasi modulo sehingga index akan berputar dari 0 sampai panjang list colors, lalu kembali ke 0 lagi. Setelah itu return colors[index]; mengembalikan warna pada index tersebut. Hasilnya adalah stream akan mengeluarkan warna-warna dari list colors secara berurutan dan berulang setiap 1 detik.
 
 Lakukan commit hasil jawaban Soal 3 dengan pesan "W12: Jawaban Soal 3"
 
