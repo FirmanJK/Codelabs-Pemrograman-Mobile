@@ -50,7 +50,7 @@ Jawab : Keyword yield* pada kode tersebut berfungsi untuk mendelegasikan atau me
 
 Apa maksud isi perintah kode tersebut?
 
-Jawab : Maksud dari perintah kode tersebut adalah membuat sebuah generator function yang menghasilkan stream warna secara periodik. Setiap 1 de tik, fungsi akan dipanggil dengan parameter t yang merupakan counter atau penghitung yang bertambah setiap kali fungsi dipanggil dimulai dari 0, 1, 2, 3, dan seterusnya. Kemudian int index = t % colors.length; menghitung index dengan operasi modulo sehingga index akan berputar dari 0 sampai panjang list colors, lalu kembali ke 0 lagi. Setelah itu return colors[index]; mengembalikan warna pada index tersebut. Hasilnya adalah stream akan mengeluarkan warna-warna dari list colors secara berurutan dan berulang setiap 1 detik.
+Jawab : Maksud dari perintah kode tersebut adalah membuat sebuah generator function yang menghasilkan stream warna secara periodik. Setiap 1 detik, fungsi akan dipanggil dengan parameter t yang merupakan counter atau penghitung yang bertambah setiap kali fungsi dipanggil dimulai dari 0, 1, 2, 3, dan seterusnya. Kemudian int index = t % colors.length; menghitung index dengan operasi modulo sehingga index akan berputar dari 0 sampai panjang list colors, lalu kembali ke 0 lagi. Setelah itu return colors[index]; mengembalikan warna pada index tersebut. Hasilnya adalah stream akan mengeluarkan warna-warna dari list colors secara berurutan dan berulang setiap 1 detik.
 
 Lakukan commit hasil jawaban Soal 3 dengan pesan "W12: Jawaban Soal 3"
 
@@ -69,13 +69,13 @@ Lakukan commit hasil jawaban Soal 4 dengan pesan "W12: Jawaban Soal 4"
 
 Jawab :
 
-![Langkah 12](assets/images/Praktikum1/Langkah12.png)
+![Langkah 12](assets/images/Praktikum1/Hasil12.png)
 
 
 ## Soal 5
 Jelaskan perbedaan menggunakan listen dan await for (langkah 9) !
 
-Jawab :
+Jawab : Perbedaan utama antara listen dan await for terletak pada cara eksekusi kode. Ketika menggunakan await for, kode akan berjalan secara sinkron dan memblokir eksekusi kode lainnya sampai stream selesai atau dibatalkan, sehingga kode setelah loop await for tidak akan dijalankan sampai stream berakhir. Sedangkan listen bersifat asinkron dan tidak memblokir eksekusi kode, sehingga kode setelah listen akan langsung dijalankan tanpa menunggu stream selesai. Dalam konteks praktis, listen lebih fleksibel karena memungkinkan kita untuk melanjutkan eksekusi kode lain sambil tetap mendengarkan perubahan dari stream, dan juga menyediakan callback tambahan seperti onError dan onDone untuk menangani error dan penyelesaian stream.
 
 
 Lakukan commit hasil jawaban Soal 5 dengan pesan "W12: Jawaban Soal 5"
