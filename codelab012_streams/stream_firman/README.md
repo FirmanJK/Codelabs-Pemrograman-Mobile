@@ -82,15 +82,16 @@ Lakukan commit hasil jawaban Soal 5 dengan pesan "W12: Jawaban Soal 5"
 
 Jawab :
 
-![Langkah 12](assets/images/Praktikum1/Langkah12.png)
+![Langkah 13](assets/images/Praktikum1/Langkah13.png)
 
 ## Praktikum 2: Stream controllers dan sinks
 
 ## Soal 6
 Jelaskan maksud kode langkah 8 dan 10 tersebut!
 
-Jawab :
+Jawab : Pada langkah 8 (initState), kode tersebut berfungsi untuk menginisialisasi stream saat widget pertama kali dibuat. Pertama, dibuat instance NumberStream yang kemudian diambil controller-nya untuk mengakses stream. Stream tersebut kemudian di-listen menggunakan method listen() yang akan mendengarkan setiap data baru yang masuk. Setiap kali ada data (event) yang dikirim ke stream, maka setState() akan dipanggil untuk memperbarui nilai variabel lastNumber dengan nilai event tersebut, sehingga UI akan otomatis ter-refresh dan menampilkan angka terbaru.
 
+Pada langkah 10 (addRandomNumber), kode tersebut berfungsi untuk menghasilkan dan mengirim angka acak ke dalam stream. Method ini membuat instance Random, kemudian menghasilkan angka acak antara 0-9 menggunakan nextInt(10), dan angka tersebut dikirim ke dalam stream melalui method addNumberToSink(). Ketika angka ini masuk ke stream, listener yang sudah dibuat di initState akan menangkapnya dan memperbarui tampilan dengan angka baru tersebut.
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
