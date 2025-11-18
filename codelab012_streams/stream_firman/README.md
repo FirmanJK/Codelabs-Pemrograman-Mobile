@@ -108,20 +108,19 @@ Jawab :
 ## Soal 7
 Jelaskan maksud kode langkah 13 sampai 15 tersebut!
 
-Jawab :
-
+Jawab : Kode pada langkah 13 sampai 15 bertujuan untuk mendemonstrasikan error handling pada stream. Pada langkah 13, ditambahkan method addError() di class NumberStream yang berfungsi untuk mengirimkan error ke dalam stream menggunakan controller.sink.addError(). Pada langkah 14, ditambahkan handler onError() pada listener stream di initState() yang akan menangkap error tersebut dan mengubah nilai lastNumber menjadi -1 ketika terjadi error. Pada langkah 15, method addRandomNumber() dimodifikasi dengan meng-comment kode yang menghasilkan angka acak dan menggantinya dengan pemanggilan numberStream.addError(), sehingga setiap kali tombol ditekan, aplikasi akan mengirim error ke stream dan menampilkan angka -1 di layar sebagai indikasi bahwa error telah ditangani dengan baik.
 
 Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
 
 Jawab :
 
-![Langkah 13](assets/images/Praktikum2/Langkah13.png)
+![Langkah 13](assets/images/Praktikum2/Langkah15.png)
 
 Lalu lakukan commit dengan pesan "W12: Jawaban Soal 7".
 
 Jawab :
 
-![Langkah 15](assets/images/Praktikum2/Langkah15.png)
+![Langkah 14](assets/images/Praktikum2/Langkah14.png)
 
 ## Praktikum 3: Injeksi data ke streams
 
