@@ -190,15 +190,16 @@ Lalu lakukan commit dengan pesan "W12: Jawaban Soal 10,11".
 
 Jawab :
 
-![Langkah 6](assets/images/Praktikum1/Langkah6.png)
+![Langkah 6](assets/images/Praktikum5/Langkah6.png)
 
 ## Praktikum 6: StreamBuilder
 
 ## Soal 12
 Jelaskan maksud kode pada langkah 3 dan 7 !
 
-Jawab :
+Jawab : Pada langkah 3, kode membuat class NumberStream yang berfungsi sebagai wrapper untuk mengelola stream data integer. Class ini memiliki StreamController<int> yang bertugas mengontrol aliran data, serta method addNumberToSink() untuk menambahkan angka baru ke dalam stream, addError() untuk mengirim error, dan close() untuk menutup stream. Method getNumbers() yang dipanggil di initState() seharusnya mengembalikan stream dari controller tersebut, sehingga widget bisa mendengarkan perubahan data yang dikirim melalui stream ini secara asynchronous.
 
+Pada langkah 7, kode menggunakan widget StreamBuilder yang secara otomatis mendengarkan perubahan data dari stream dan membangun ulang UI setiap kali ada data baru. Parameter stream menentukan sumber data yang akan didengarkan, initialData: 0 memberikan nilai awal sebelum data pertama datang, dan builder adalah fungsi yang menentukan tampilan berdasarkan kondisi snapshot. Jika ada error, akan mencetak pesan error; jika ada data, akan menampilkan angka tersebut di tengah layar dengan ukuran font 96; dan jika tidak ada data, akan menampilkan widget kosong. Pendekatan ini lebih efisien dibanding menggunakan setState() manual karena StreamBuilder mengelola subscription dan rebuild secara otomatis.
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
