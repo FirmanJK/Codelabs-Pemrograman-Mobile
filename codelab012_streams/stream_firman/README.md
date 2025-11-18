@@ -171,14 +171,14 @@ Jawab :
 ## Soal 10
 Jelaskan mengapa error itu bisa terjadi ?
 
-Jawab :
+Jawab : Berdasarkan kode yang saya lihat, error "Bad state: Stream has already been listened to" terjadi karena ada dua subscription yang mencoba mendengarkan stream yang sama secara bersamaan. Pada method initState(), kode membuat dua listener yaitu subscription dan subscription2 yang keduanya mendengarkan stream yang sama (numberStreamController.stream). Secara default, stream di Dart bersifat single-subscription, yang berarti hanya boleh memiliki satu listener aktif pada satu waktu. Ketika subscription kedua (subscription2) mencoba mendengarkan stream yang sudah didengarkan oleh subscription pertama, Flutter melempar error tersebut karena melanggar aturan single-subscription stream. Untuk mengatasi masalah ini, Anda perlu mengubah stream menjadi broadcast stream menggunakan method asBroadcastStream() yang memungkinkan multiple listeners, atau cukup menghapus salah satu subscription yang tidak diperlukan.
 
+![Langkah 3](assets/images/Praktikum5/Langkah3.png)
 
 ## Soal 11
 Jelaskan mengapa hal itu bisa terjadi ?
 
-Jawab :
-
+Jawab : Autofix atau formatting terjadi pada file main.dart karena editor mendeteksi adanya penyimpangan dari aturan formatting standar Dart setelah saya melakukan perubahan kode. Ketika kode dimodifikasi, terutama saat menambahkan atau mengubah baris kode seperti penambahan .asBroadcastStream(), bisa jadi ada inkonsistensi dalam hal indentasi, spasi, atau struktur penulisan yang tidak sesuai dengan style guide Dart. Editor secara otomatis menjalankan formatter (biasanya dart format) untuk memastikan kode tetap rapi dan konsisten dengan konvensi penulisan Dart yang standar, seperti penggunaan spasi yang tepat, line breaks, dan indentasi yang seragam. Ini adalah fitur yang membantu menjaga kualitas dan keterbacaan kode secara otomatis tanpa perlu intervensi manual dari developer.
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
