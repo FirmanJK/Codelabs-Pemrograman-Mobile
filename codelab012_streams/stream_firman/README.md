@@ -127,8 +127,7 @@ Jawab :
 ## Soal 8
 Jelaskan maksud kode langkah 1-3 tersebut!
 
-Jawab :
-
+Jawab : Kode pada langkah 1 sampai 3 bertujuan untuk mendemonstrasikan penggunaan StreamTransformer yang berfungsi untuk memodifikasi atau mentransformasi data yang mengalir melalui stream sebelum sampai ke listener. Pada langkah 1, dideklarasikan variabel transformer bertipe StreamTransformer. Pada langkah 2, transformer diinisialisasi dengan menggunakan fromHandlers yang memiliki tiga handler: handleData untuk memproses data normal dengan mengalikan nilai dengan 10 sebelum dikirim ke sink, handleError untuk menangani error dengan mengirim nilai -1, dan handleDone untuk menutup sink ketika stream selesai. Pada langkah 3, transformer diterapkan pada stream menggunakan method transform() sebelum listen(), sehingga setiap angka acak yang dihasilkan akan otomatis dikalikan 10 terlebih dahulu sebelum ditampilkan di layar, misalnya jika angka acak adalah 5 maka yang ditampilkan adalah 50.
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
