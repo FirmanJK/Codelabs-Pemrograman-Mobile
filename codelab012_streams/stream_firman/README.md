@@ -218,8 +218,9 @@ Jawab :
 ## Soal 13
 Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
 
-Jawab :
+Jawab : Praktikum ini bertujuan untuk memahami dan mengimplementasikan pola arsitektur BLoC (Business Logic Component) dalam Flutter menggunakan Stream sebagai mekanisme komunikasi antara UI dan business logic. Konsep utamanya adalah memisahkan logika bisnis dari tampilan UI, sehingga kode menjadi lebih terstruktur, mudah diuji, dan dapat digunakan kembali. Dalam praktikum ini, aplikasi menampilkan angka random yang dihasilkan setiap kali user menekan tombol floating action button, dimana proses generate angka random ditangani oleh BLoC, bukan langsung di widget.
 
+Letak konsep pola BLoC-nya ada di file random_bloc.dart, khususnya pada class RandomNumberBloc. Di sini terdapat dua StreamController: _generateRandomController sebagai input stream yang menerima event dari UI (ketika user menekan tombol), dan _randomNumberController sebagai output stream yang mengirim data hasil (angka random) kembali ke UI. Pola BLoC terlihat jelas pada pemisahan tanggung jawab: UI (random_screen.dart) hanya bertugas menampilkan data dan mengirim event melalui Sink, sementara BLoC menangani semua logika bisnis (generate angka random) dan mengirim hasilnya melalui Stream. Widget menggunakan StreamBuilder untuk mendengarkan perubahan data dari BLoC secara reaktif, sehingga UI otomatis terupdate ketika ada data baru tanpa perlu memanggil setState() secara manual.
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
