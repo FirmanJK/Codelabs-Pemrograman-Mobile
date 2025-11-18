@@ -146,7 +146,11 @@ Jawab :
 ## Soal 9
 Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
 
-Jawab :
+Jawab : Pada langkah 2, kode diubah untuk menggunakan StreamSubscription yang menyimpan referensi hasil dari stream.listen() ke dalam variabel subscription. Berbeda dengan sebelumnya yang menggunakan transformer, sekarang stream langsung di-listen dan hasilnya disimpan dalam subscription agar bisa dikontrol lebih lanjut. Subscription ini kemudian ditambahkan handler onError dan onDone secara terpisah untuk menangani error dan event selesai dari stream.
+
+Pada langkah 6, method dispose() diubah untuk memanggil subscription.cancel() menggantikan numberStreamController.close(). Hal ini penting karena ketika widget dihancurkan, kita perlu membatalkan subscription untuk mencegah memory leak dan memastikan listener tidak lagi menerima event dari stream yang sudah tidak digunakan. Method cancel() akan menghentikan subscription dari mendengarkan stream.
+
+Pada langkah 8, method addRandomNumber() ditambahkan pengecekan kondisi menggunakan !numberStreamController.isClosed sebelum menambahkan data ke stream. Jika controller sudah ditutup (closed), maka alih-alih menambahkan data yang akan menyebabkan error, aplikasi akan mengubah lastNumber menjadi -1 untuk memberi indikasi bahwa stream sudah tidak aktif. Ini mencegah error yang terjadi ketika mencoba mengirim data ke stream yang sudah ditutup.
 
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
