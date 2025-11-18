@@ -95,7 +95,7 @@ Pada langkah 10 (addRandomNumber), kode tersebut berfungsi untuk menghasilkan da
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
-Jawab :
+Jawab : 
 
 ![Langkah 12](assets/images/Praktikum2/Langkah12.gif)
 
