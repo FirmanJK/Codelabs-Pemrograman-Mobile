@@ -36,13 +36,13 @@ Masukkan hasil capture layar ke laporan praktikum Anda.
 
 Jawab :
 
-
+![Langkah 9](assets/images/Praktikum1/Langkah9.gif)
 
 Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 2"
 
 Jawab :
 
-
+![Langkah 10](assets/images/Praktikum1/Langkah10.png)
 
 ## Soal 3
 Masukkan hasil capture layar ke laporan praktikum Anda.
