@@ -55,7 +55,7 @@ Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 3"
 
 Jawab :
 
-![Langkah 22](assets/images/Praktikum1/Langkah22.png)
+![Langkah 22](assets/images/Praktikum1/Langkah22.PNG)
 
 ## Soal 4
 Capture hasil running aplikasi Anda, kemudian impor ke laporan praktikum Anda!
