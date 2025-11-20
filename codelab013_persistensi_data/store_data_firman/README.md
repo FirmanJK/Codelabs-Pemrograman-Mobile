@@ -1,16 +1,147 @@
-# store_data_firman
+# Laporan Praktikum
 
-A new Flutter project.
+# 13 | Persistensi Data
 
-## Getting Started
+# Pemrograman Mobile
 
-This project is a starting point for a Flutter application.
+### Nama : Mochammad Firmandika Jati Kusuma
 
-A few resources to get you started if this is your first Flutter project:
+### NIM : 2341720229
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Praktikum 1: Konversi Dart model ke JSON
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Soal 1
+Tambahkan nama panggilan Anda pada title app sebagai identitas hasil pekerjaan Anda.
+
+Jawab :
+
+![Langkah 1](assets/images/Praktikum1/Langkah1.png)
+
+Gantilah warna tema aplikasi sesuai kesukaan Anda.
+
+Jawab : 
+
+![Langkah 1](assets/images/Praktikum1/Langkah1.png)
+
+![Langkah 1](assets/images/Praktikum1/Langkah1.gif)
+
+Lakukan commit hasil jawaban Soal 1 dengan pesan "W13: Jawaban Soal 1"
+
+Jawab :
+
+![Langkah 2](assets/images/Praktikum1/Langkah2.png)
+
+## Soal 2
+Masukkan hasil capture layar ke laporan praktikum Anda.
+
+Jawab :
+
+
+
+Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 2"
+
+Jawab :
+
+
+
+## Soal 3
+Masukkan hasil capture layar ke laporan praktikum Anda.
+
+Jawab :
+
+
+Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 3"
+
+Jawab :
+
+
+
+## Soal 4
+Capture hasil running aplikasi Anda, kemudian impor ke laporan praktikum Anda!
+
+Jawab :
+
+
+
+Lalu lakukan commit dengan pesan "W13: Jawaban Soal 4".
+
+Jawab :
+
+
+
+## Soal 5
+Jelaskan maksud kode lebih safe dan maintainable!
+
+Jawab : 
+
+
+
+Capture hasil praktikum Anda dan lampirkan di README.
+
+Jawab : 
+
+
+
+Lalu lakukan commit dengan pesan "W13: Jawaban Soal 5".
+
+Jawab : 
+
+
+
+## Soal 6
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+Jawab : 
+
+
+
+Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
+
+Jawab : 
+
+
+
+## Soal 7
+Capture hasil praktikum Anda dan lampirkan di README.
+
+Jawab : 
+
+
+
+Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
+
+Jawab : 
+
+
+
+## Soal 8
+Jelaskan maksud kode pada langkah 3 dan 7 !
+
+Jawab : 
+
+
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+Jawab : 
+
+
+
+Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
+
+Jawab : 
+
+
+
+## Soal 9
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+Jawab : 
+
+
+
+Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
+
+Jawab : 
+
+
