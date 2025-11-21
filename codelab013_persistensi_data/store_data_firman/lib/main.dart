@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import './model/pizza.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:path_provider/path_provider.dart';
+import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 void main() {
   runApp(const MyApp());
@@ -60,6 +63,8 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Pizza> myPizzas = [];
   String pizzaString = '';
   int appCounter = 0;
+  String documentsPath='';
+  String tempPath='';
 
   Future readAndWritePreference() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -79,10 +84,35 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  Future<void> getPaths() async {
+    // path_provider tidak support web, jadi kita skip untuk web
+    if (kIsWeb) {
+      setState(() {
+        documentsPath = 'Not supported on Web';
+        tempPath = 'Not supported on Web';
+      });
+      return;
+    }
+    
+    try {
+      final docDir = await getApplicationDocumentsDirectory();
+      final tempDir = await getTemporaryDirectory();
+      setState(() {
+        documentsPath = docDir.path;
+        tempPath = tempDir.path;
+      });
+    } catch (e) {
+      setState(() {
+        documentsPath = 'Error: $e';
+        tempPath = 'Error: $e';
+      });
+    }
+  }
+
   @override
   void initState() {
     super.initState();
-    readAndWritePreference();
+    getPaths();
   }
 
   Future<List<Pizza>> readJsonFile() async {
@@ -112,19 +142,12 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Text('You have opened the app $appCounter times.'),
-            ElevatedButton(
-              onPressed: () {
-                deletePreference();
-              },
-              child: Text('Reset counter'),
-            ),
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Text('Doc path: $documentsPath'),
+          Text('Temp path: $tempPath'),
+        ],
       ),
     );
   }

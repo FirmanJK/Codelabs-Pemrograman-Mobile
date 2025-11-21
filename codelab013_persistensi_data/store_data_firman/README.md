@@ -108,18 +108,22 @@ Jawab :
 
 ![Langkah 15](assets/images/Praktikum4/Langkah15.PNG)
 
+## Praktikum 5: Akses filesystem dengan path_provider
+
 ## Soal 7
 Capture hasil praktikum Anda dan lampirkan di README.
 
 Jawab : 
 
-![Langkah 15](assets/images/Praktikum4/Langkah15.PNG)
+![Langkah 6](assets/images/Praktikum5/Langkah6.PNG)
 
 Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
 
 Jawab : 
 
+![Langkah 7](assets/images/Praktikum5/Langkah7.PNG)
 
+## Praktikum 6: Akses filesystem dengan direktori
 
 ## Soal 8
 Jelaskan maksud kode pada langkah 3 dan 7 !
@@ -132,23 +136,26 @@ Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
 Jawab : 
 
-
+![Langkah 6](assets/images/Praktikum6/Langkah6.PNG)
 
 Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
 
 Jawab : 
 
+![Langkah 7](assets/images/Praktikum6/Langkah7.PNG)
 
+## Praktikum 7: Menyimpan data dengan enkripsi/dekripsi
 
 ## Soal 9
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
 Jawab : 
 
-
+![Langkah 8](assets/images/Praktikum7/Langkah8.PNG)
 
 Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
 
 Jawab : 
 
+![Langkah 9](assets/images/Praktikum7/Langkah9.PNG)
 
