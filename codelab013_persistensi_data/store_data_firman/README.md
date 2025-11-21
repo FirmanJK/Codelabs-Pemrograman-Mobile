@@ -57,6 +57,8 @@ Jawab :
 
 ![Langkah 22](assets/images/Praktikum1/Langkah22.PNG)
 
+## Praktikum 2: Handle kompatibilitas data JSON
+
 ## Soal 4
 Capture hasil running aplikasi Anda, kemudian impor ke laporan praktikum Anda!
 
@@ -70,31 +72,33 @@ Jawab :
 
 ![Langkah 11](assets/images/Praktikum2/Langkah11.PNG)
 
+## Praktikum 3: Menangani error JSON
+
 ## Soal 5
 Jelaskan maksud kode lebih safe dan maintainable!
 
 Jawab : 
 
-
+Dengan menggunakan konstanta untuk kunci JSON, kode menjadi lebih aman dan mudah dipelihara karena menghindari kesalahan penulisan string literal (typo) yang sulit dideteksi saat kompilasi. Jika ada perubahan nama field di JSON, kita hanya perlu mengubah nilai konstanta di satu tempat, bukan mencari dan mengganti string literal di banyak lokasi. Selain itu, editor dapat memberikan autocomplete dan error checking yang lebih baik saat menggunakan konstanta, sehingga mengurangi risiko bug akibat salah ketik nama field. Pendekatan ini juga memudahkan refactoring dan membuat kode lebih konsisten karena semua referensi ke field JSON menggunakan konstanta yang sama.
 
 Capture hasil praktikum Anda dan lampirkan di README.
 
 Jawab : 
 
-
+![Langkah 3](assets/images/Praktikum3/Langkah3.PNG)
 
 Lalu lakukan commit dengan pesan "W13: Jawaban Soal 5".
 
 Jawab : 
 
-
+![Langkah 4](assets/images/Praktikum3/Langkah4.PNG)
 
 ## Soal 6
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
 Jawab : 
 
-
+![Langkah 11](assets/images/Praktikum4/Langkah11.PNG)
 
 Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
 
