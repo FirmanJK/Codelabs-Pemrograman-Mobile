@@ -93,25 +93,27 @@ Jawab :
 
 ![Langkah 4](assets/images/Praktikum3/Langkah4.PNG)
 
+## Praktikum 4: SharedPreferences
+
 ## Soal 6
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
 Jawab : 
 
-![Langkah 11](assets/images/Praktikum4/Langkah11.PNG)
+![Langkah 14](assets/images/Praktikum4/Langkah14.gif)
 
 Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
 
 Jawab : 
 
-
+![Langkah 15](assets/images/Praktikum4/Langkah15.PNG)
 
 ## Soal 7
 Capture hasil praktikum Anda dan lampirkan di README.
 
 Jawab : 
 
-
+![Langkah 15](assets/images/Praktikum4/Langkah15.PNG)
 
 Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
 
