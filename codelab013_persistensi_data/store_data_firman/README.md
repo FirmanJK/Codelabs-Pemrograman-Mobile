@@ -130,13 +130,19 @@ Jelaskan maksud kode pada langkah 3 dan 7 !
 
 Jawab : 
 
+- Penjelasan Langkah 3 - Method writeFile():
 
+Method writeFile() adalah fungsi asinkron yang bertugas menulis data ke dalam file. Method ini menggunakan myFile.writeAsString() untuk menyimpan teks 'Margherita, Capricciosa, Napoli' ke dalam file pizzas.txt yang berada di direktori dokumen aplikasi. Fungsi ini dibungkus dalam blok try-catch untuk menangani kemungkinan error saat proses penulisan file. Jika penulisan berhasil, method akan mengembalikan nilai true, namun jika terjadi error (misalnya permission denied atau storage penuh), method akan mengembalikan false. Ini adalah contoh implementasi persistensi data menggunakan file system di Flutter.
+
+- Penjelasan Langkah 6 - Edit build() dan Tambahkan Tombol Baca:
+
+Pada method build(), ditambahkan widget ElevatedButton yang berfungsi sebagai tombol untuk membaca isi file. Ketika tombol dengan label 'Read File' ditekan, tombol ini akan memanggil method readFile() yang akan membaca konten dari file pizzas.txt. Setelah tombol, terdapat widget Text(fileText) yang menampilkan isi variabel fileText di layar. Ketika pengguna menekan tombol, method readFile() akan membaca file, mengupdate state dengan setState(), dan konten file akan ditampilkan di widget Text tersebut. Ini memungkinkan pengguna untuk melihat data yang telah disimpan sebelumnya di file.
 
 Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
 Jawab : 
 
-![Langkah 6](assets/images/Praktikum6/Langkah6.PNG)
+![Langkah 6](assets/images/Praktikum6/Langkah6.gif)
 
 Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
 
