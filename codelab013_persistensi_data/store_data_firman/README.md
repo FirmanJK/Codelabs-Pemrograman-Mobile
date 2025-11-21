@@ -157,7 +157,7 @@ Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
 Jawab : 
 
-![Langkah 8](assets/images/Praktikum7/Langkah8.PNG)
+![Langkah 8](assets/images/Praktikum7/Langkah8.gif)
 
 Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
 
