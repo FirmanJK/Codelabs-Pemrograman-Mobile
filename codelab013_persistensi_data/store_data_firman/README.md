@@ -49,7 +49,7 @@ Masukkan hasil capture layar ke laporan praktikum Anda.
 
 Jawab :
 
-![Langkah 21](assets/images/Praktikum1/Langkah21.png)
+![Langkah 21](assets/images/Praktikum1/Langkah21.PNG)
 
 Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 3"
 
