@@ -80,7 +80,13 @@ class _MyHomePageState extends State<MyHomePage> {
       myPizzas.add(myPizza);
     }
 
+    String json = convertToJSON(myPizzas);
+    print(json);
     return myPizzas;
+  }
+
+  String convertToJSON(List<Pizza> pizzas) {
+    return jsonEncode(pizzas.map((pizza) => pizza.toJson()).toList());
   }
 
   @override
@@ -96,6 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
           return ListTile(
             title: Text(myPizzas[index].pizzaName),
             subtitle: Text(myPizzas[index].description),
+            trailing: Text('€ ${myPizzas[index].price}'),
           );
         },
       ),

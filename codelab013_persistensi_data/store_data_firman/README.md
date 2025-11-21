@@ -62,13 +62,13 @@ Capture hasil running aplikasi Anda, kemudian impor ke laporan praktikum Anda!
 
 Jawab :
 
-
+![Langkah 22](assets/images/Praktikum2/Langkah10.PNG)
 
 Lalu lakukan commit dengan pesan "W13: Jawaban Soal 4".
 
 Jawab :
 
-
+![Langkah 11](assets/images/Praktikum2/Langkah11.PNG)
 
 ## Soal 5
 Jelaskan maksud kode lebih safe dan maintainable!
