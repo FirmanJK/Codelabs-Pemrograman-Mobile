@@ -45,6 +45,8 @@ Capture hasil aplikasi Anda berupa GIF di README dan lakukan commit hasil jawaba
 
 Jawab :
 
+![Langkah 16](assets/images/Praktikum2/Langkah16.gif)
+
 ![Langkah 16](assets/images/Praktikum2/Langkah16.png)
 
 ## Soal 3
