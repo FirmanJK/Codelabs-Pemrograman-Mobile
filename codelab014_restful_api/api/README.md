@@ -33,6 +33,8 @@ Jawab :
 
 ![Langkah 10](assets/images/Praktikum1/Langkah10.png)
 
+## Praktikum 2: Mengirim Data ke Web Service (POST)
+
 ## Soal 2
 
 Tambahkan field baru dalam JSON maupun POST ke Wiremock!
@@ -48,6 +50,8 @@ Jawab :
 ![Langkah 16](assets/images/Praktikum2/Langkah16.gif)
 
 ![Langkah 16](assets/images/Praktikum2/Langkah16.png)
+
+## Praktikum 3: Memperbarui Data di Web Service (PUT)
 
 ## Soal 3
 
@@ -65,10 +69,16 @@ Jawab :
 
 ![Langkah 11](assets/images/Praktikum3/Langkah11.png)
 
+## Praktikum 4: Menghapus Data dari Web Service (DELETE)
+
 ## Soal 4
 
 Capture hasil aplikasi Anda berupa GIF di README dan lakukan commit hasil jawaban Soal 4 dengan pesan "W14: Jawaban Soal 4"
 
 Jawab :
 
-![Langkah 6](assets/images/Praktikum3/Langkah6.png)
+![Langkah 6](assets/images/Praktikum4/Langkah6.png)
+
+![Langkah 6](assets/images/Praktikum4/Langkah6.gif)
+
+![Langkah 7](assets/images/Praktikum4/Langkah7.png)
